@@ -1,0 +1,200 @@
+PROJECT: NXBuild Upwork Showcase Prototype
+LOCATION: D:\Прототипы\nxbuild_prototype
+STATUS: Showcase structure implemented, build verified
+LAST_UPDATED: 2026-04-06
+
+MISSION
+Turn the existing NXBuild clickable demo into a premium SaaS case-study showcase that sells UI/UX prototyping services on Upwork.
+
+The project should not behave like a regular product demo only.
+It should behave like a sales asset that demonstrates:
+- UX thinking
+- information architecture
+- user flows
+- wireframes
+- high-fidelity dashboard UI
+- clickable prototype value
+- developer handoff readiness
+
+PRIMARY BUSINESS GOAL
+Use one polished prototype as a high-conviction portfolio piece that supports multiple package tiers on Upwork without changing the quality bar of the visible demo.
+
+TARGET OUTCOME
+The prototype should make a client believe:
+1. The designer can structure a SaaS product from idea to prototype.
+2. The designer understands flows, not just screens.
+3. The designer can deliver premium dashboard UI and realistic interactions.
+4. The same person can package the work into different paid service tiers.
+
+CURRENT STATE
+- Existing app is already clickable and deployable.
+- Existing app already includes a useful end-to-end product scenario:
+  onboarding -> inbox -> estimate -> project -> payments -> dashboard -> settings
+- Existing app is visually clean but still reads more like a direct product prototype than a service-selling showcase.
+- Existing app lacks explicit sections for:
+  - service pitch
+  - process explanation
+  - user flow mapping
+  - wireframe presentation
+  - deliverables / handoff framing
+
+DESIRED POSITIONING
+This should feel like:
+- premium SaaS design service
+- product strategy + UX + UI package
+- interactive case-study
+- believable client-ready prototype
+
+This should NOT feel like:
+- a generic admin template
+- a plain landing page
+- a one-screen mockup
+- a toy demo with random cards
+
+LOCKED CREATIVE DIRECTION
+Direction: Upwork-style premium SaaS showcase
+
+Core framing:
+- Service Landing
+- Process / Value
+- User Flows
+- Wireframes
+- High-Fidelity UI
+- Clickable Product Journey
+- Handoff / System Readiness
+
+VISUAL GOALS
+- More premium and intentional than the current prototype
+- Stronger visual hierarchy
+- Clear narrative between sections
+- Distinct "design deliverable" feel
+- Still fast, clean, and credible for B2B SaaS buyers
+- Responsive enough to demo on desktop and mobile widths
+
+UX GOALS
+- Make navigation clearer
+- Reduce the feeling of "many disconnected cards"
+- Create a stronger top-level story from service promise to product outcome
+- Make the welcome area function as a conversion-oriented case-study entry point
+- Preserve clickability and scenario progress
+
+CONTENT GOALS
+The demo should visibly communicate that the service can include:
+- product discovery
+- user flows
+- wireframes
+- dashboard UI
+- interactive prototype
+- design system / handoff
+- optional coded demo
+
+PACKAGE STRATEGY SUPPORT
+The same showcase must support multiple commercial tiers later, such as:
+- Basic:
+  user flow + wireframes
+- Standard:
+  UX/UI + clickable prototype
+- Premium:
+  full UX/UI package + handoff + optional coded demo framing
+
+IMPLEMENTATION PLAN
+Phase 1: Documentation and project framing
+- Create this project_state file
+- Expand README to explain purpose, architecture, and service framing
+
+Phase 2: Structural redesign
+- Reframe app navigation to better reflect a sales showcase
+- Introduce clearer story sequence and naming
+- Add or rename screens so the app demonstrates service workflow, not only product workflow
+
+Phase 3: New showcase surfaces
+- Add a stronger service landing / overview screen
+- Add a dedicated user flows screen
+- Add a dedicated wireframes screen
+- Add a design system / handoff or package-readiness screen
+
+Phase 4: Upgrade product screens
+- Improve dashboard polish
+- Improve spacing and composition
+- Upgrade hero and summary sections
+- Make the UI feel more intentional and premium
+
+Phase 5: Preserve and improve clickability
+- Keep existing interactive scenario logic where useful
+- Make sure transitions still support a real demo narrative
+- Ensure the showcase can still be explored as a clickable prototype
+
+Phase 6: Verification
+- Run production build
+- Fix visual or TypeScript issues
+- Confirm deployability
+
+PLANNED SCREEN MAP
+1. Showcase
+Purpose:
+Sell the service immediately and frame the prototype as a premium SaaS case-study.
+
+2. Process
+Purpose:
+Explain how work moves from discovery to prototype.
+
+3. User Flows
+Purpose:
+Show UX architecture and journey mapping.
+
+4. Wireframes
+Purpose:
+Show structural thinking before visual polish.
+
+5. Final UI
+Purpose:
+Present the premium SaaS dashboard interface.
+
+6. Product Flow
+Purpose:
+Let the viewer click through the real scenario:
+onboarding -> inbox -> estimate -> project -> payments -> dashboard
+
+7. Handoff
+Purpose:
+Show components, deliverables, and readiness for implementation.
+
+TECHNICAL IMPLEMENTATION NOTES
+- Keep current Vite + React + TypeScript setup.
+- Work primarily inside:
+  - src/components/NXBuildClickablePrototype.tsx
+  - src/index.css
+- Reuse existing lightweight UI primitives.
+- Avoid introducing heavy new dependencies unless clearly necessary.
+- Keep build compatibility with current Vercel deployment.
+
+NON-GOALS
+- Do not turn this into a real SaaS backend.
+- Do not add authentication, API, database, or real persistence.
+- Do not overcomplicate the codebase with large abstractions unless they clearly improve maintainability.
+
+RISKS TO WATCH
+- Overdesigning the showcase and losing clarity
+- Making the app feel like a static presentation instead of a clickable prototype
+- Adding too many screens without keeping the journey coherent
+- Breaking responsive behavior with more complex layouts
+
+DECISION RULES
+- If a choice improves service-selling clarity, prefer it.
+- If a choice is only decorative and weakens comprehension, reject it.
+- If a choice makes the prototype feel less believable as a SaaS product, reject it.
+- If a change risks breaking the demo flow, pause and ask before proceeding.
+
+DEFINITION OF DONE
+- README documents the project clearly
+- project_state stays aligned with implementation
+- the app clearly sells UI/UX prototyping services
+- there are explicit sections for flows, wireframes, final UI, and handoff
+- the design quality is materially higher than the starting point
+- the app still builds successfully
+
+OPEN QUESTIONS
+- None blocking right now
+
+NEXT ACTION
+Review visuals in browser, refine copy and spacing if needed, then prepare git/deploy follow-up.
